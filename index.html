@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskPex – Task • Earn • Grow</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo-wrap">
+        <img src="images/logo.png" alt="TaskPex" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <span class="logo-fallback" style="display:none">
+          <span class="logo-t">T</span><span class="logo-p">P</span>
+          <span class="logo-name">TaskPex</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#earn">Earn</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#download" class="btn-primary nav-cta">Download App</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#features">Features</a>
+      <a href="#how">How It Works</a>
+      <a href="#earn">Earn</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#faq">FAQ</a>
+      <a href="#download" class="btn-primary">Download App</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-circles">
+      <span class="circle c1"></span>
+      <span class="circle c2"></span>
+      <span class="circle c3"></span>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge-pill">🚀 Task • Earn • Grow</span>
+        <h1>Play Games.<br/><span class="gradient-text">Earn Real Coins.</span><br/>Withdraw Anytime.</h1>
+        <p class="hero-sub">TaskPex turns your free time into rewards. Complete tasks, spin the wheel, crack quizzes — and convert coins to cash.</p>
+        <div class="hero-actions">
+          <a href="https://play.google.com/store/apps/details?id=com.app.taskpex" target="_blank" rel="noopener noreferrer" class="btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.37.21.8.22 1.19.03l12.54-7.03-2.76-2.77-10.97 9.77zm16.33-9.16L17.09 13l2.44-2.61-2.02-1.14L3.18.24C2.79.05 2.36.06 1.99.27L14.17 12 19.51 14.6zM1.99.27C1.7.46 1.5.8 1.5 1.23v21.54c0 .43.2.77.49.96L14.17 12 1.99.27zm17.52 9.97l-2.44 2.61 2.42 2.42 2.31-1.29c.66-.37.66-1.3 0-1.67l-2.29-2.07z"/></svg>
+            Google Play
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">500K+</span><span class="stat-label">Downloads</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">₹50L+</span><span class="stat-label">Paid Out</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">4.7★</span><span class="stat-label">Rating</span></div>
+        </div>
+      </div>
+      <div class="hero-phones">
+        <div class="phone-mockup phone-back">
+          <div class="phone-screen screen-quiz">
+            <div class="screen-header">
+              <span class="screen-title">Ultimate Quiz Arena</span>
+              <span class="coin-badge">🪙 676</span>
+            </div>
+            <div class="quiz-question">What is the capital of Jamaica?</div>
+            <div class="quiz-options">
+              <div class="quiz-opt">Port-au-Prince</div>
+              <div class="quiz-opt correct">Kingston ✓</div>
+              <div class="quiz-opt">Bridgetown</div>
+              <div class="quiz-opt">San Juan</div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-mockup phone-front">
+          <div class="phone-screen screen-home">
+            <div class="screen-header dark">
+              <span class="screen-title">TaskPex</span>
+              <span class="coin-badge">🪙 1121</span>
+            </div>
+            <div class="home-coins">
+              <div class="coins-display">
+                <span class="coins-icon">⭐</span>
+                <span class="coins-val">1,121</span>
+                <span class="coins-label">Coins</span>
+              </div>
+            </div>
+            <div class="home-grid">
+              <div class="home-card">🎯 Quiz</div>
+              <div class="home-card">🌀 Spin</div>
+              <div class="home-card">🎟 Scratch</div>
+              <div class="home-card">🔗 Refer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-label">What You Can Do</div>
+      <h2 class="section-title">Everything You Need to <span class="gradient-text">Earn More</span></h2>
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon spin-icon">🌀</div>
+          <h3>Lucky Spin</h3>
+          <p>Spin the wheel daily and win coins ranging from 3 to 13. Free spins refresh every day — never miss a chance.</p>
+          <div class="feature-tag">Daily Reward</div>
+        </div>
+
+        <div class="feature-card featured">
+          <div class="feature-badge">Most Popular</div>
+          <div class="feature-icon quiz-icon">🏆</div>
+          <h3>Ultimate Quiz Arena</h3>
+          <p>10 questions per round. Choose category & difficulty. Beat the timer and rack up coins per correct answer.</p>
+          <div class="feature-tag">Earn Per Answer</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon word-icon">🔤</div>
+          <h3>Word Puzzle</h3>
+          <p>Unscramble letters to form the correct word. Animal categories, science, sports — new puzzles every session.</p>
+          <div class="feature-tag">Brain Training</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon scratch-icon">🎟</div>
+          <h3>Scratch Cards</h3>
+          <p>Scratch and reveal hidden coin rewards. Instant gratification — win up to 500 coins per card.</p>
+          <div class="feature-tag">Instant Win</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon promo-icon">🎁</div>
+          <h3>Promo Codes</h3>
+          <p>Enter promo codes and instantly receive 250 bonus coins. Each code usable once per account.</p>
+          <div class="feature-tag">250 Coins Bonus</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon daily-icon">📅</div>
+          <h3>Daily Bonus</h3>
+          <p>Log in every day for growing streak rewards. Consecutive days = bigger bonuses. Don't break the streak!</p>
+          <div class="feature-tag">Streak Rewards</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how section" id="how">
+    <div class="container">
+      <div class="section-label">Simple Process</div>
+      <h2 class="section-title">Start Earning in <span class="gradient-text">3 Easy Steps</span></h2>
+      <div class="steps-row">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon">📱</div>
+          <h3>Download & Sign Up</h3>
+          <p>Install TaskPex, create your free account in under a minute. No fees, no hidden charges.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-icon">🎮</div>
+          <h3>Play & Complete Tasks</h3>
+          <p>Play quizzes, spin the wheel, scratch cards, solve word puzzles. Every action earns coins.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon">💸</div>
+          <h3>Redeem Rewards</h3>
+          <p>Convert coins to UPI cash, gift vouchers, or mobile recharge. Instant withdrawal processing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EARN SECTION -->
+  <section class="earn section" id="earn">
+    <div class="container earn-grid">
+      <div class="earn-text">
+        <div class="section-label">Reward System</div>
+        <h2 class="section-title">How Many Coins <span class="gradient-text">Can You Earn?</span></h2>
+        <p>Every activity on TaskPex rewards you with coins. The more you engage, the more you earn.</p>
+        <div class="earn-table">
+          <div class="earn-row">
+            <span class="earn-activity">🌀 Lucky Spin</span>
+            <span class="earn-range">3 – 13 coins / spin</span>
+          </div>
+          <div class="earn-row">
+            <span class="earn-activity">🏆 Quiz Arena</span>
+            <span class="earn-range">10 – 50 coins / quiz</span>
+          </div>
+          <div class="earn-row">
+            <span class="earn-activity">🔤 Word Puzzle</span>
+            <span class="earn-range">5 – 20 coins / puzzle</span>
+          </div>
+          <div class="earn-row">
+            <span class="earn-activity">🎟 Scratch Card</span>
+            <span class="earn-range">10 – 500 coins / card</span>
+          </div>
+          <div class="earn-row">
+            <span class="earn-activity">📅 Daily Bonus</span>
+            <span class="earn-range">25 – 100 coins / day</span>
+          </div>
+          <div class="earn-row">
+            <span class="earn-activity">🎁 Promo Code</span>
+            <span class="earn-range">250 coins / code</span>
+          </div>
+        </div>
+        <a href="#download" class="btn-primary btn-lg">Start Earning Now</a>
+      </div>
+      <div class="earn-visual">
+        <div class="spin-preview">
+          <div class="wheel-wrap">
+            <div class="wheel" id="demoWheel">
+              <div class="wheel-segment seg1"><span>13<br/><small>Coins</small></span></div>
+              <div class="wheel-segment seg2"><span>0<br/><small>Coins</small></span></div>
+              <div class="wheel-segment seg3"><span>7<br/><small>Coins</small></span></div>
+              <div class="wheel-segment seg4"><span>3<br/><small>Coins</small></span></div>
+              <div class="wheel-segment seg5"><span>5<br/><small>Coins</small></span></div>
+              <div class="wheel-segment seg6"><span>7<br/><small>Coins</small></span></div>
+              <div class="wheel-segment seg7"><span>6<br/><small>Coins</small></span></div>
+              <div class="wheel-segment seg8"><span>11<br/><small>Coins</small></span></div>
+            </div>
+            <div class="wheel-pointer">▼</div>
+            <div class="wheel-center">⭐</div>
+          </div>
+          <button class="btn-primary spin-btn" id="spinBtn">SPIN NOW</button>
+          <div class="spins-left">🕐 SPINS LEFT: <strong>2</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section class="screenshots section" id="screenshots">
+    <div class="container">
+      <div class="section-label">App Preview</div>
+      <h2 class="section-title" style="text-align:center">See TaskPex <span class="gradient-text">In Action</span></h2>
+      <p class="screenshots-sub">A smooth, beautiful experience designed for maximum earning and zero friction.</p>
+      <div class="screenshots-track-wrap">
+        <div class="screenshots-track" id="screenshotsTrack">
+
+          <!-- Screen 1: Home -->
+          <div class="ss-phone">
+            <div class="ss-notch"></div>
+            <div class="ss-screen ss-home">
+              <div class="ss-topbar">
+                <span class="ss-app-name">TaskPex</span>
+                <span class="ss-coin-pill">🪙 1,121</span>
+              </div>
+              <div class="ss-balance-card">
+                <div class="ss-bal-label">Your Balance</div>
+                <div class="ss-bal-amount">₹ 11.21</div>
+                <div class="ss-bal-coins">1,121 Coins</div>
+                <div class="ss-withdraw-btn">Withdraw</div>
+              </div>
+              <div class="ss-grid">
+                <div class="ss-tile t-quiz">🏆<span>Quiz</span></div>
+                <div class="ss-tile t-spin">🌀<span>Spin</span></div>
+                <div class="ss-tile t-scratch">🎟<span>Scratch</span></div>
+                <div class="ss-tile t-refer">🔗<span>Refer</span></div>
+              </div>
+            </div>
+            <div class="ss-label">Home</div>
+          </div>
+
+          <!-- Screen 2: Quiz -->
+          <div class="ss-phone">
+            <div class="ss-notch"></div>
+            <div class="ss-screen ss-quiz">
+              <div class="ss-topbar">
+                <span class="ss-app-name">Quiz Arena</span>
+                <span class="ss-coin-pill">🪙 676</span>
+              </div>
+              <div class="ss-quiz-timer">⏱ 00:18</div>
+              <div class="ss-quiz-q">What is the capital of Jamaica?</div>
+              <div class="ss-quiz-opts">
+                <div class="ss-opt">Port-au-Prince</div>
+                <div class="ss-opt ss-correct">Kingston ✓</div>
+                <div class="ss-opt">Bridgetown</div>
+                <div class="ss-opt">San Juan</div>
+              </div>
+              <div class="ss-quiz-score">Score: <b>+10 coins</b></div>
+            </div>
+            <div class="ss-label">Quiz Arena</div>
+          </div>
+
+          <!-- Screen 3: Spin -->
+          <div class="ss-phone">
+            <div class="ss-notch"></div>
+            <div class="ss-screen ss-spin">
+              <div class="ss-topbar">
+                <span class="ss-app-name">Lucky Spin</span>
+                <span class="ss-coin-pill">🪙 890</span>
+              </div>
+              <div class="ss-wheel-preview">
+                <div class="ss-wheel">
+                  <div class="ss-wheel-inner">⭐</div>
+                </div>
+                <div class="ss-wheel-ptr">▼</div>
+              </div>
+              <div class="ss-spin-info">2 Free Spins Left Today</div>
+              <div class="ss-spin-btn-mock">SPIN NOW</div>
+            </div>
+            <div class="ss-label">Lucky Spin</div>
+          </div>
+
+          <!-- Screen 4: Scratch Card -->
+          <div class="ss-phone">
+            <div class="ss-notch"></div>
+            <div class="ss-screen ss-scratch">
+              <div class="ss-topbar">
+                <span class="ss-app-name">Scratch Card</span>
+                <span class="ss-coin-pill">🪙 340</span>
+              </div>
+              <div class="ss-scratch-card">
+                <div class="ss-scratch-revealed">
+                  <div class="ss-scratch-icon">🎟</div>
+                  <div class="ss-scratch-win">+250 Coins!</div>
+                  <div class="ss-scratch-sub">Scratch &amp; Win Instantly</div>
+                </div>
+              </div>
+              <div class="ss-scratch-hint">Scratch to reveal your prize</div>
+            </div>
+            <div class="ss-label">Scratch Card</div>
+          </div>
+
+          <!-- Screen 5: Withdraw -->
+          <div class="ss-phone">
+            <div class="ss-notch"></div>
+            <div class="ss-screen ss-withdraw">
+              <div class="ss-topbar">
+                <span class="ss-app-name">Redeem</span>
+                <span class="ss-coin-pill">🪙 2,400</span>
+              </div>
+              <div class="ss-redeem-list">
+                <div class="ss-redeem-item ss-redeem-active">
+                  <span>💳</span>
+                  <div><b>UPI Transfer</b><small>Instant • Min 1000 coins</small></div>
+                  <span class="ss-check">✓</span>
+                </div>
+                <div class="ss-redeem-item">
+                  <span>🎁</span>
+                  <div><b>Gift Voucher</b><small>Amazon, Flipkart &amp; more</small></div>
+                </div>
+                <div class="ss-redeem-item">
+                  <span>📱</span>
+                  <div><b>Mobile Recharge</b><small>All operators</small></div>
+                </div>
+              </div>
+              <div class="ss-redeem-btn-mock">Redeem Now</div>
+            </div>
+            <div class="ss-label">Redeem</div>
+          </div>
+
+        </div>
+      </div>
+      <!-- Navigation dots -->
+      <div class="ss-dots" id="ssDots">
+        <button class="ss-dot active" onclick="goToSlide(0)" aria-label="Home"></button>
+        <button class="ss-dot" onclick="goToSlide(1)" aria-label="Quiz"></button>
+        <button class="ss-dot" onclick="goToSlide(2)" aria-label="Spin"></button>
+        <button class="ss-dot" onclick="goToSlide(3)" aria-label="Scratch"></button>
+        <button class="ss-dot" onclick="goToSlide(4)" aria-label="Redeem"></button>
+      </div>
+      <div class="ss-cta">
+        <a href="https://play.google.com/store/apps/details?id=com.app.taskpex" target="_blank" rel="noopener noreferrer" class="btn-primary btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.37.21.8.22 1.19.03l12.54-7.03-2.76-2.77-10.97 9.77zm16.33-9.16L17.09 13l2.44-2.61-2.02-1.14L3.18.24C2.79.05 2.36.06 1.99.27L14.17 12 19.51 14.6zM1.99.27C1.7.46 1.5.8 1.5 1.23v21.54c0 .43.2.77.49.96L14.17 12 1.99.27zm17.52 9.97l-2.44 2.61 2.42 2.42 2.31-1.29c.66-.37.66-1.3 0-1.67l-2.29-2.07z"/></svg>
+          Download on Google Play
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-label">User Reviews</div>
+      <h2 class="section-title">What People <span class="gradient-text">Are Saying</span></h2>
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p>"TaskPex is amazing! I earned ₹500 in my first week just by playing quizzes during my commute."</p>
+          <div class="testi-user"><span class="testi-avatar">RS</span><span><strong>Rahul S.</strong> · Mumbai</span></div>
+        </div>
+        <div class="testi-card featured">
+          <div class="testi-stars">★★★★★</div>
+          <p>"The referral system is brilliant. Invited 10 friends, got 500 bonus coins on top of the regular earnings. Love it!"</p>
+          <div class="testi-user"><span class="testi-avatar">PK</span><span><strong>Priya K.</strong> · Bangalore</span></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★☆</div>
+          <p>"Daily spin + quiz = easy coins. Withdrew to my UPI within 24 hours. Legit app, no issues."</p>
+          <div class="testi-user"><span class="testi-avatar">AM</span><span><strong>Arjun M.</strong> · Delhi</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section" id="faq">
+    <div class="container faq-container">
+      <div class="section-label">Got Questions?</div>
+      <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Is TaskPex free to use? <span>+</span></button>
+          <div class="faq-a">Yes! TaskPex is completely free. Download, sign up, and start earning — no subscription or fees ever.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How do I withdraw my coins? <span>+</span></button>
+          <div class="faq-a">Go to the Redeem section, choose UPI / bank transfer / gift voucher, enter required coins and submit. Processed within 24–48 hours.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">How many spins do I get per day? <span>+</span></button>
+          <div class="faq-a">You get 2 free spins daily. Spins reset every midnight. Watch ads to earn extra spins.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Can I use multiple promo codes? <span>+</span></button>
+          <div class="faq-a">Each promo code can be redeemed once per account. But you can use as many different valid codes as you find!</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Is my data safe? <span>+</span></button>
+          <div class="faq-a">Absolutely. We use industry-standard encryption. We never share your personal data with third parties without your consent.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD CTA -->
+  <section class="download section" id="download">
+    <div class="container download-inner">
+      <div class="download-bg-glow"></div>
+      <div class="section-label">Get Started Today</div>
+      <h2 class="section-title">Download TaskPex <span class="gradient-text">Free</span></h2>
+      <p>Available on Android. Join 500,000+ users already earning daily rewards.</p>
+      <div class="download-btns">
+        <a href="https://play.google.com/store/apps/details?id=com.app.taskpex" target="_blank" rel="noopener noreferrer" class="store-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M3.18 23.76c.37.21.8.22 1.19.03l12.54-7.03-2.76-2.77-10.97 9.77zm16.33-9.16L17.09 13l2.44-2.61-2.02-1.14L3.18.24C2.79.05 2.36.06 1.99.27L14.17 12 19.51 14.6zM1.99.27C1.7.46 1.5.8 1.5 1.23v21.54c0 .43.2.77.49.96L14.17 12 1.99.27zm17.52 9.97l-2.44 2.61 2.42 2.42 2.31-1.29c.66-.37.66-1.3 0-1.67l-2.29-2.07z"/></svg>
+          <div>
+            <small>Get it on</small>
+            <strong>Google Play</strong>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="TaskPex" class="footer-logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
+        <span class="footer-logo-fallback" style="display:none"><span class="logo-t">T</span><span class="logo-p">P</span> <b>TaskPex</b></span>
+        <p>Task • Earn • Grow</p>
+        <p class="footer-tagline">Turn your free time into real rewards.</p>
+      </div>
+      <div class="footer-links">
+        <h4>App</h4>
+        <a href="#features">Features</a>
+        <a href="#how">How It Works</a>
+        <a href="#earn">Earn Coins</a>
+        <a href="#download">Download</a>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <a href="pages/about.html">About Us</a>
+        <a href="pages/privacy.html">Privacy Policy</a>
+        <a href="pages/terms.html">Terms of Service</a>
+        <a href="pages/contact.html">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 TaskPex. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

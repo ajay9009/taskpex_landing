@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – TaskPex</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Orbitron:wght@700;900&display=swap" rel="stylesheet"/>
+  <style>
+    .about-page { padding: 120px 0 80px; }
+    .about-hero { text-align: center; margin-bottom: 80px; }
+    .about-hero h1 { font-size: 48px; font-weight: 900; margin-bottom: 16px; }
+    .about-hero p { color: var(--text-secondary); font-size: 18px; max-width: 600px; margin: 0 auto; }
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 80px; }
+    .val-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 32px; text-align: center; }
+    .val-icon { font-size: 40px; margin-bottom: 16px; }
+    .val-card h3 { font-size: 20px; font-weight: 800; margin-bottom: 8px; }
+    .val-card p { color: var(--text-secondary); font-size: 14px; }
+    .contact-box { background: var(--bg-card); border: 1px solid var(--accent-gold); border-radius: var(--radius-xl); padding: 48px; text-align: center; max-width: 600px; margin: 0 auto; }
+    .contact-box h2 { font-size: 32px; font-weight: 900; margin-bottom: 12px; }
+    .contact-box p { color: var(--text-secondary); margin-bottom: 24px; }
+    .contact-email { font-size: 24px; font-weight: 800; color: var(--accent-gold); }
+    @media(max-width:768px) { .values-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo-wrap">
+        <span class="logo-fallback" style="display:flex">
+          <span class="logo-t">T</span><span class="logo-p">P</span>
+          <span class="logo-name">TaskPex</span>
+        </span>
+      </a>
+      <a href="../index.html#download" class="btn-primary nav-cta" style="margin-left:auto">Download App</a>
+    </div>
+  </nav>
+  <div class="about-page">
+    <div class="container">
+      <div class="about-hero">
+        <span class="section-label">About Us</span>
+        <h1>We're Building <span class="gradient-text">TaskPex</span></h1>
+        <p>A platform where your time and skills translate into real rewards. Task. Earn. Grow — it's not just a tagline, it's our mission.</p>
+      </div>
+      <div class="values-grid">
+        <div class="val-card">
+          <div class="val-icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>Make earning accessible to everyone. No investment needed — just your time, skills, and curiosity.</p>
+        </div>
+        <div class="val-card">
+          <div class="val-icon">🔒</div>
+          <h3>Trust & Transparency</h3>
+          <p>Every coin earned is legitimate. Every withdrawal is processed fairly. No hidden terms, no manipulation.</p>
+        </div>
+        <div class="val-card">
+          <div class="val-icon">🚀</div>
+          <h3>Continuous Growth</h3>
+          <p>We keep adding new ways to earn. New games, new tasks, new features — always evolving for our users.</p>
+        </div>
+      </div>
+      <div class="contact-box">
+        <h2>Get in <span class="gradient-text">Touch</span></h2>
+        <p>Have questions, feedback, or issues? We're here to help.</p>
+        <div class="contact-email">📧 support@taskpex.com</div>
+        <br/><br/>
+        <a href="../index.html#download" class="btn-primary btn-lg">Download TaskPex</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
