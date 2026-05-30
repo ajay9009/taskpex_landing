@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.app.taskpex",
+      "sha256_cert_fingerprints": [
+        "09:D3:D4:7C:20:54:86:61:4F:48:B7:47:27:4E:D4:11:21:D8:42:B9:5F:38:EB:49:AD:E2:75:E6:4E:A6:24:FE"
+      ]
+    }
+  }
+]

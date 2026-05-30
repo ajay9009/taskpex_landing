@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TaskPex – Opening App...</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      text-align: center;
+      font-family: sans-serif;
+      padding-top: 80px;
+      background: #0d0f1a;
+      color: #fff;
+    }
+    img { width: 80px; border-radius: 18px; margin-bottom: 20px; }
+    h2 { color: #f5c518; font-size: 22px; margin-bottom: 10px; }
+    p { color: #a0aec0; font-size: 15px; margin-bottom: 4px; }
+    a { color: #f5c518; }
+    .spinner {
+      width: 40px; height: 40px;
+      border: 3px solid rgba(245,197,24,0.2);
+      border-top-color: #f5c518;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 24px auto 0;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+  <script>
+    window.onload = function () {
+      var urlParams = new URLSearchParams(window.location.search);
+      var code = urlParams.get("code") || "";
+
+      var packageName = "com.app.taskpex";
+      var appHost = "taskpexapp.netlify.app";
+
+      // Play Store link with referrer so install attribution works
+      var playStoreLink = "https://play.google.com/store/apps/details?id=" +
+        packageName + "&referrer=" + encodeURIComponent("code=" + code);
+
+      // Android intent deep link
+      var appIntent = "intent://" + appHost + "/refer?code=" + encodeURIComponent(code) +
+        "#Intent;scheme=https;package=" + packageName + ";end;";
+
+      // Try to open app
+      window.location.href = appIntent;
+
+      // Fallback to Play Store if app not installed
+      setTimeout(function () {
+        window.location.href = playStoreLink;
+      }, 2500);
+    };
+  </script>
+</head>
+<body>
+  <img src="../ico/taskpex_logo.png" alt="TaskPex" onerror="this.style.display='none'" />
+  <h2>Opening TaskPex...</h2>
+  <p>If the app is installed, it will open now.</p>
+  <p>Otherwise you'll be redirected to the Play Store.</p>
+  <div class="spinner"></div>
+  <p style="margin-top:32px;font-size:13px;">
+    Not redirected?
+    <a href="https://play.google.com/store/apps/details?id=com.app.taskpex">
+      Download TaskPex
+    </a>
+  </p>
+</body>
+</html>
