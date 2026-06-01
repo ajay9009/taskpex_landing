@@ -27,13 +27,14 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 body {
   font-family: var(--font-main);
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
@@ -94,6 +95,7 @@ body {
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-color);
   transition: background 0.3s;
+  overflow-x: hidden;
 }
 .navbar.scrolled { background: rgba(13, 15, 26, 0.98); }
 .nav-inner {
@@ -129,6 +131,7 @@ body {
   padding: 120px 0 80px;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 .hero-bg-circles { position: absolute; inset: 0; pointer-events: none; }
 .circle { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.12; }
@@ -268,6 +271,7 @@ body {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scrollbar-color: rgba(245,197,24,0.3) transparent;
+  max-width: 100%;
 }
 .carousel::-webkit-scrollbar { height: 4px; }
 .carousel::-webkit-scrollbar-track { background: transparent; }
@@ -311,8 +315,8 @@ body {
 .faq-a.open { max-height: 200px; padding: 0 24px 20px; }
 
 /* DOWNLOAD */
-.download { background: var(--bg-secondary); }
-.download-inner { text-align: center; position: relative; }
+.download { background: var(--bg-secondary); overflow: hidden; }
+.download-inner { text-align: center; position: relative; overflow: hidden; }
 .download-bg-glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 300px; background: radial-gradient(ellipse, rgba(245,197,24,0.08) 0%, transparent 70%); pointer-events: none; }
 .download .section-label, .download .section-title { display: block; }
 .download p { color: var(--text-secondary); margin-bottom: 36px; font-size: 17px; }
@@ -426,8 +430,8 @@ body {
   }
 
   /* Hero mobile */
-  .hero { padding: 80px 0 48px; min-height: auto; }
-  .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 32px; }
+  .hero { padding: 80px 0 48px; min-height: auto; width: 100%; }
+  .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 32px; max-width: 100%; }
   .hero-sub { margin: 0 auto 28px; font-size: 16px; }
   .hero-actions { justify-content: center; }
   .hero-stats { justify-content: center; flex-wrap: wrap; gap: 16px; }
@@ -457,7 +461,7 @@ body {
   .wheel-wrap { width: 220px; height: 220px; }
 
   /* Carousel mobile */
-  .carousel { gap: 12px; padding: 8px 4px 16px; }
+  .carousel { gap: 12px; padding: 8px 4px 16px; max-width: 100%; }
   .carousel img { width: 180px; border-radius: 20px; }
 
   /* Testimonials mobile */
